@@ -10,6 +10,7 @@ import { CartService } from '../cart.service';
 export class ShippingComponent implements OnInit {
 
     shippingCosts;
+    list = false;
 
     constructor(
         private cartService: CartService
@@ -17,6 +18,9 @@ export class ShippingComponent implements OnInit {
 
     ngOnInit() {
         this.shippingCosts = this.cartService.getShippingPrices();
+        setTimeout(() => {
+            this.list = true;
+        }, 300);
     }
 
 }

@@ -1,7 +1,7 @@
 <a [routerLink]="['/']">
     <h1>My Store</h1>
 </a>
-<span matBadge={{itemsLength}} matBadgePosition="above after" *ngIf="itemsLength >= 0">
+<span matBadge={{itemsLength}} matBadgePosition="above after" matBadgeColor="accent" *ngIf="itemsLength >= 0">
     <a [routerLink]="['/cart']" class="button fancy-button">
         <i class="material-icons">shopping_cart</i>
         Checkout
